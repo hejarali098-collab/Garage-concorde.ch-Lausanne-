@@ -264,3 +264,36 @@ animation:rotorSpin 28s linear infinite}
   .features{grid-template-columns:1fr}
   .promo img{max-height:190px}
 }
+
+
+/* V8 - prestations professionnelles, lignes lumineuses et AutoScout24 */
+.circuit-motion,.mini-car,.track-svg{display:none!important}
+.light-lines{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.light-line{position:absolute;left:-15%;width:130%;height:3px;border-radius:999px;filter:blur(.2px);opacity:.55;transform:rotate(-8deg);animation:glideLine 9s ease-in-out infinite}
+.red-line{top:28%;background:linear-gradient(90deg,transparent,#d71936,#ff4b55,transparent);box-shadow:0 0 15px rgba(215,25,54,.45)}
+.gold-line{top:52%;background:linear-gradient(90deg,transparent,#f5c400,#ffe46c,transparent);box-shadow:0 0 15px rgba(245,196,0,.38);animation-delay:1.8s}
+.white-line{top:74%;background:linear-gradient(90deg,transparent,#fff,#dfe3e8,transparent);box-shadow:0 0 18px rgba(255,255,255,.8);animation-delay:3.2s}
+@keyframes glideLine{
+  0%,100%{transform:translateX(-3%) rotate(-8deg);opacity:.25}
+  50%{transform:translateX(3%) rotate(-8deg);opacity:.62}
+}
+.services-pro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:24px 0}
+.service-pro{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #ececef;border-radius:12px;padding:13px 14px;box-shadow:0 7px 20px rgba(0,0,0,.035)}
+.service-pro strong{display:block;font-size:14px}
+.service-pro small{display:block;color:#6c6e75;margin-top:3px;line-height:1.25}
+.service-icon{width:34px;height:34px;min-width:34px;border-radius:10px;display:grid;place-items:center;background:#fff4f5;border:1px solid #ffd7da;font-size:17px}
+.autoscout{background:#1c5ca8;color:#fff}
+.success-message{background:#eaf8ee;border:1px solid #9bd5aa;color:#1f6c34;border-radius:10px;padding:15px 17px;margin:16px 0;font-weight:800}
+
+@media(max-width:700px){
+  .light-line{height:2px;opacity:.24}
+  .services-pro{grid-template-columns:1fr}
+  .service-pro{padding:11px 12px}
+  .service-pro strong{font-size:13px}
+  .service-pro small{font-size:11px}
+  .service-icon{width:31px;height:31px;min-width:31px;font-size:15px}
+  .autoscout{width:100%;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .light-line{animation:none}
+}

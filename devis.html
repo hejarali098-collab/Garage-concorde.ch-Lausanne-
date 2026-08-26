@@ -29,7 +29,7 @@
 <body>
 <header class="site-header">
   <a class="brand" href="index.html"><img src="logo.jpeg" alt="Garage Concorde"><span>Garage Concorde Sàrl</span></a>
-  <nav><a href="index.html">Accueil</a><a class="active" href="devis.html">Devis</a><a href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a><a href="trouvez-nous.html">Trouvez-nous</a></nav>
+  <nav><a href="index.html">Accueil</a><a class="active" href="devis.html">Devis</a><a href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a><a href="trouvez-nous.html">Trouvez-nous</a><a href="https://www.autoscout24.ch/fr/s/seller-1173342" target="_blank" rel="noopener">Véhicules</a></nav>
 </header>
 
 <main class="quote-wrap">
@@ -43,11 +43,12 @@
     <input type="hidden" name="_subject" value="Nouvelle demande de devis - Garage Concorde">
     <input type="hidden" name="_template" value="table">
     <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_autoresponse" value="Bonjour, nous avons bien reçu votre demande de devis. Notre équipe va l'examiner et vous contactera dans les meilleurs délais. Garage Concorde Sàrl - Av. d'Échallens 4, 1004 Lausanne - 021 624 73 35 - info@garage-concorde.ch">
     <input type="hidden" name="_next" value="https://garage-concorde-ch-lausanne.vercel.app/devis.html?envoye=1">
     <div class="form-grid">
       <div class="field"><label>Nom et prénom</label><input name="Nom et prénom" required></div>
       <div class="field"><label>Téléphone</label><input name="Téléphone" type="tel" required></div>
-      <div class="field"><label>E-mail</label><input name="E-mail" type="email"></div>
+      <div class="field"><label>E-mail</label><input name="email" type="email" required></div>
       <div class="field"><label>Immatriculation</label><input name="Immatriculation" placeholder="Ex. VD 123456"></div>
       <div class="field"><label>Marque</label><input name="Marque" placeholder="Ex. Volkswagen"></div>
       <div class="field"><label>Modèle</label><input name="Modèle" placeholder="Ex. Golf"></div>
@@ -72,5 +73,15 @@
 <footer><b>Garage Concorde Sàrl</b><span>Av. d’Échallens 4, 1004 Lausanne</span><span>021 624 73 35 · info@garage-concorde.ch</span></footer>
 
 
+<script>
+const params = new URLSearchParams(window.location.search);
+if (params.get('envoye') === '1') {
+  const box = document.getElementById('successMessage');
+  if (box) {
+    box.style.display = 'block';
+    box.scrollIntoView({behavior:'smooth', block:'center'});
+  }
+}
+</script>
 </body>
 </html>
