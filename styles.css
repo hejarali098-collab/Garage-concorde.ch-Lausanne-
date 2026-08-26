@@ -555,3 +555,68 @@ animation:rotorSpin 28s linear infinite}
   .main-actions-v12{grid-template-columns:1fr 1fr}
   .main-actions-v12 .main-btn{font-size:12px;min-height:50px}
 }
+
+/* V13 - animation discrète roues + clés, sans noms des marques */
+.garage-motion{
+  position:relative;
+  width:min(640px,88vw);
+  height:92px;
+  margin:18px auto 20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:64px;
+  pointer-events:none;
+}
+.motion-wheel{
+  width:66px;height:66px;border-radius:50%;
+  border:8px solid rgba(25,25,25,.78);
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,.65),0 8px 24px rgba(0,0,0,.10);
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.28);
+  animation:gcWheel 12s linear infinite;
+}
+.wheel-right{animation-direction:reverse;animation-duration:15s}
+.wheel-rim{
+  width:30px;height:30px;border-radius:50%;
+  border:4px solid rgba(190,20,38,.72);
+  display:grid;place-items:center;color:#222;font-size:17px;
+}
+.motion-tools{
+  position:relative;width:110px;height:72px;
+  opacity:.78;
+}
+.tool{
+  position:absolute;left:50%;top:50%;
+  font-size:46px;line-height:1;
+  filter:grayscale(1);
+  transform-origin:50% 55%;
+}
+.tool-a{animation:gcToolA 9s ease-in-out infinite}
+.tool-b{animation:gcToolB 11s ease-in-out infinite;opacity:.55}
+@keyframes gcWheel{to{transform:rotate(360deg)}}
+@keyframes gcToolA{
+  0%,100%{transform:translate(-50%,-50%) rotate(-28deg)}
+  50%{transform:translate(-50%,-50%) rotate(18deg)}
+}
+@keyframes gcToolB{
+  0%,100%{transform:translate(-50%,-50%) rotate(48deg)}
+  50%{transform:translate(-50%,-50%) rotate(8deg)}
+}
+@media (prefers-reduced-motion:reduce){
+  .motion-wheel,.tool{animation:none!important}
+}
+@media(max-width:850px){
+  .garage-motion{height:72px;gap:34px;margin:14px auto 16px}
+  .motion-wheel{width:52px;height:52px;border-width:6px}
+  .wheel-rim{width:24px;height:24px;border-width:3px;font-size:13px}
+  .motion-tools{width:82px;height:58px}
+  .tool{font-size:36px}
+}
+@media(max-width:430px){
+  .garage-motion{height:58px;gap:24px}
+  .motion-wheel{width:42px;height:42px;border-width:5px}
+  .wheel-rim{width:18px;height:18px;font-size:10px}
+  .motion-tools{width:62px;height:48px}
+  .tool{font-size:29px}
+}
