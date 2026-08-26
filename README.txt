@@ -1,15 +1,19 @@
-GARAGE CONCORDE SÀRL — VERSION PLUS CLAIRE
+GARAGE CONCORDE SÀRL — VERSION BLANC / JAUNE / ROUGE AVEC VOITURES ANIMÉES
 
-Modifications :
-- Plus de blanc et de gris clair pour alléger le site.
-- Accueil = une seule page sans sections en dessous.
-- Texte accueil : plus de 20 ans, toutes marques, entretien, réparation, carrosserie, préparation expertise, devis gratuit.
-- Publicité conservée à droite.
-- Atelier : photos du garage séparées des photos de l'équipe.
-- Devis, rendez-vous et atelier accessibles depuis le menu.
+Contenu :
+- index.html : accueil sur une seule page, sans défilement important
+- devis.html : formulaire de devis
+- rendez-vous.html : lien Reservio + WhatsApp discret
+- atelier.html : photos atelier séparées des photos équipe
+- styles.css : design et animation des petites voitures
 
-Pour GitHub :
+Installation GitHub :
 1. Décompressez le ZIP.
-2. Envoyez tous les fichiers ensemble à la racine du dépôt.
-3. Ne créez pas de dossier assets.
-4. Ne renommez aucun fichier.
+2. Dans votre dépôt GitHub, cliquez Add file > Upload files.
+3. Envoyez TOUS les fichiers de ce dossier ensemble.
+4. Cliquez Commit changes.
+5. Attendez 1 à 2 minutes puis actualisez votre site.
+
+Important :
+- Aucun dossier assets.
+- Ne renommez aucun fichier.
