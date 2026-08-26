@@ -347,3 +347,92 @@ animation:rotorSpin 28s linear infinite}
  .hero-v9{padding-bottom:145px}
 }
 @media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
+
+
+/* V10 - marques automobiles discrètes en arrière-plan */
+.pro-bg{display:none!important}
+.brand-motion{
+  position:absolute;
+  left:0;right:0;
+  bottom:88px;
+  height:78px;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:1;
+  opacity:.18;
+  mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 10%,#000 90%,transparent 100%);
+}
+.brand-track{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  width:max-content;
+  animation:brandScroll 42s linear infinite;
+}
+.brand-track span{
+  display:inline-grid;
+  place-items:center;
+  min-width:118px;
+  height:54px;
+  padding:0 18px;
+  border:1px solid rgba(20,20,20,.16);
+  border-radius:14px;
+  background:rgba(255,255,255,.62);
+  color:#26272a;
+  font-size:13px;
+  font-weight:900;
+  letter-spacing:.2px;
+  box-shadow:0 4px 12px rgba(0,0,0,.03);
+  backdrop-filter:blur(3px);
+}
+@keyframes brandScroll{
+  from{transform:translateX(0)}
+  to{transform:translateX(-50%)}
+}
+
+@media(max-width:850px){
+  .brand-motion{
+    bottom:105px;
+    height:58px;
+    opacity:.12;
+  }
+  .brand-track{gap:12px;animation-duration:36s}
+  .brand-track span{
+    min-width:92px;
+    height:42px;
+    padding:0 12px;
+    font-size:11px;
+    border-radius:11px;
+  }
+}
+@media(max-width:430px){
+  .brand-motion{bottom:112px;opacity:.10}
+}
+@media(prefers-reduced-motion:reduce){
+  .brand-track{animation:none}
+}
+
+/* V11 - partenaires */
+.partners-section{background:#fff;border-top:1px solid #ececef;padding:34px 22px 38px}
+.partners-inner{max-width:1180px;margin:0 auto}
+.partners-title{text-align:center;margin-bottom:22px}
+.partners-title>span{font-size:11px;font-weight:950;letter-spacing:2px;color:#d71936}
+.partners-title h2{font-size:24px;margin:6px 0 0;color:#171719}
+.partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.partner-card{min-height:155px;background:#fff;border:1px solid #e5e5e8;border-radius:15px;padding:17px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:0 7px 22px rgba(0,0,0,.045)}
+.partner-card img{width:100%;height:58px;object-fit:contain;margin-bottom:13px}
+.partner-card p{margin:0;font-size:13px;line-height:1.35;color:#242529}
+.partner-card p strong{font-size:14px}
+.partner-card p span{font-size:11px;color:#6b6c71}
+@media(max-width:800px){
+ .partner-grid{grid-template-columns:1fr 1fr}
+ .partners-section{padding:28px 15px 32px}
+ .partners-title h2{font-size:20px}
+}
+@media(max-width:430px){
+ .partner-card{min-height:130px;padding:12px}
+ .partner-card img{height:42px}
+ .partner-card p strong{font-size:12px}
+ .partner-card p span{font-size:10px}
+}
