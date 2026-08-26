@@ -14,5 +14,3 @@ Accueil modifié :
 Les fonctions des autres pages restent identiques à V8.
 
 V10 : accueil inchangé, seul le fond a été remplacé par une bande discrète de marques automobiles qui défile doucement. Adapté téléphone.
-
-V11 : section Nos partenaires ajoutée avec les 4 logos fournis : H-Oxygène, Quality1, LeaseForce et CareFree.
