@@ -1,0 +1,42 @@
+<!doctype html><html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Garage Concorde Sàrl à Lausanne: entretien, réparation, pneus, carrosserie, diagnostic et préparation expertise.">
+<title>Devis | Garage Concorde Sàrl</title><link rel="stylesheet" href="styles.css"></head><body>
+<div class="topbar"><div class="container"><div>📍 Av. d'Échallens 4, 1004 Lausanne</div><div><a href="tel:+41216247335">021 624 73 35</a> · <a href="mailto:info@garage-concorde.ch">info@garage-concorde.ch</a></div></div></div>
+<header><div class="container nav">
+<a class="brand" href="index.html"><img src="logo.jpeg" alt="Logo Garage Concorde"><div><strong>Garage Concorde Sàrl</strong><span>Lausanne</span></div></a>
+<nav class="navlinks"><a href="index.html">Accueil</a><a href="devis.html">Devis</a><a href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a></nav>
+</div></header>
+
+<main><section class="section"><div class="container">
+<div class="eyebrow">Demande de devis</div><h1 style="font-size:56px">Votre <span>devis</span></h1>
+<p class="lead">Remplissez le formulaire. Votre application e-mail s'ouvrira avec toutes les informations déjà préparées.</p>
+<div class="notice"><strong>Garage Concorde Sàrl</strong> · 021 624 73 35 · info@garage-concorde.ch</div>
+<form id="devisForm" class="form"><div class="form-grid">
+<div><label>Nom et prénom<input id="nom" required></label></div>
+<div><label>Téléphone<input id="tel" type="tel" required></label></div>
+<div><label>E-mail<input id="email" type="email"></label></div>
+<div><label>Immatriculation<input id="plaque"></label></div>
+<div><label>Marque<input id="marque"></label></div>
+<div><label>Modèle<input id="modele"></label></div>
+<div><label>Année<input id="annee"></label></div>
+<div><label>Kilométrage<input id="km"></label></div>
+<div class="full"><label>Description de la demande<textarea id="message" required></textarea></label></div>
+<div class="full"><button class="btn btn-red" type="submit">Préparer la demande</button></div>
+</div></form>
+</div></section></main>
+<script>
+document.getElementById('devisForm').addEventListener('submit',function(e){
+e.preventDefault();
+const v=id=>encodeURIComponent(document.getElementById(id).value||'-');
+const body='Nom: '+v('nom')+'%0D%0ATéléphone: '+v('tel')+'%0D%0AE-mail: '+v('email')+'%0D%0AImmatriculation: '+v('plaque')+'%0D%0AMarque: '+v('marque')+'%0D%0AModèle: '+v('modele')+'%0D%0AAnnée: '+v('annee')+'%0D%0AKilométrage: '+v('km')+'%0D%0A%0D%0ADemande:%0D%0A'+v('message');
+location.href='mailto:info@garage-concorde.ch?subject=Demande%20de%20devis%20Garage%20Concorde&body='+body;
+});
+</script>
+
+<footer class="footer"><div class="container">
+<div class="footer-grid">
+<div><h3>Garage Concorde Sàrl</h3><p>Votre garage toutes marques à Lausanne.</p></div>
+<div><h3>Contact</h3><p>021 624 73 35<br>info@garage-concorde.ch</p></div>
+<div><h3>Adresse</h3><p>Av. d'Échallens 4<br>1004 Lausanne</p></div>
+</div><p class="note">© 2026 Garage Concorde Sàrl</p></div></footer></body></html>
