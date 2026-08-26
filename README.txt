@@ -1,20 +1,21 @@
-GARAGE CONCORDE SÀRL — SITE V4
+GARAGE CONCORDE SÀRL — SITE V6
 
-Modifications :
-- Pages Devis et Rendez-vous conservées corrigées.
-- Suppression de l'animation de clé.
-- Nouvelle animation plus professionnelle : disques de frein/rotors + ligne diagnostic + pulsations discrètes.
+Nouveautés :
+- Nouvelle page "Trouvez-nous" avec carte Google Maps.
+- Liens Instagram et TikTok officiels ajoutés.
+- Animation d'accueil remplacée par un circuit discret avec petites voitures en mouvement.
 - Animation allégée sur téléphone.
-- Page Atelier : photos atelier séparées des photos équipe.
-- Section Vidéos prête pour TikTok / Instagram.
+- Formulaire de devis envoyé directement à Garageconcorde@gmail.com via FormSubmit.
 
-Pour intégrer les vraies vidéos :
-envoyez les liens PUBLICS TikTok ou Instagram. Ils seront ajoutés à la section Vidéos.
+IMPORTANT POUR LE FORMULAIRE :
+Lors du premier envoi, FormSubmit enverra un e-mail de confirmation à Garageconcorde@gmail.com.
+Il faut cliquer sur le lien de confirmation UNE SEULE FOIS pour activer la réception directe des devis.
+Ensuite les demandes arriveront automatiquement par e-mail.
 
 Installation :
 1. Décompressez le ZIP.
-2. Remplacez les fichiers du dépôt GitHub par tous les fichiers du ZIP.
+2. Envoyez tous les fichiers ensemble sur GitHub.
 3. Commit changes.
 4. Attendez 1 à 2 minutes et actualisez.
 
-V5 : 4 liens vidéo ajoutés à la page Atelier (2 TikTok + 2 Instagram).
+V7 : optimisation complète pour téléphone ajoutée (menu, boutons, formulaires, galerie, carte, vidéos, tailles de texte).

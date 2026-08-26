@@ -29,7 +29,7 @@
 <body>
 <header class="site-header">
   <a class="brand" href="index.html"><img src="logo.jpeg" alt="Garage Concorde"><span>Garage Concorde Sàrl</span></a>
-  <nav><a href="index.html">Accueil</a><a class="active" href="devis.html">Devis</a><a href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a></nav>
+  <nav><a href="index.html">Accueil</a><a class="active" href="devis.html">Devis</a><a href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a><a href="trouvez-nous.html">Trouvez-nous</a></nav>
 </header>
 
 <main class="quote-wrap">
@@ -37,19 +37,23 @@
 <section class="quote-card">
   <div class="kicker">DEVIS GRATUIT</div>
   <h1>Demander un <span>devis</span></h1>
-  <p>Remplissez les informations ci-dessous. En cliquant sur le bouton, votre application e-mail s'ouvrira avec votre demande déjà préparée pour Garage Concorde.</p>
+  <p>Remplissez les informations ci-dessous. La demande est envoyée directement par e-mail au garage avec toutes les informations du client.</p>
 
-  <form id="devisForm">
+  <form action="https://formsubmit.co/Garageconcorde@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nouvelle demande de devis - Garage Concorde">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://garage-concorde-ch-lausanne.vercel.app/devis.html?envoye=1">
     <div class="form-grid">
-      <div class="field"><label>Nom et prénom</label><input id="nom" required></div>
-      <div class="field"><label>Téléphone</label><input id="tel" type="tel" required></div>
-      <div class="field"><label>E-mail</label><input id="email" type="email"></div>
-      <div class="field"><label>Immatriculation</label><input id="plaque" placeholder="Ex. VD 123456"></div>
-      <div class="field"><label>Marque</label><input id="marque" placeholder="Ex. Volkswagen"></div>
-      <div class="field"><label>Modèle</label><input id="modele" placeholder="Ex. Golf"></div>
-      <div class="field"><label>Année</label><input id="annee" placeholder="Ex. 2019"></div>
-      <div class="field"><label>Kilométrage</label><input id="km" placeholder="Ex. 120000 km"></div>
-      <div class="field full"><label>Travaux souhaités / problème</label><textarea id="message" required placeholder="Expliquez-nous ce qu'il faut contrôler ou réparer..."></textarea></div>
+      <div class="field"><label>Nom et prénom</label><input name="Nom et prénom" required></div>
+      <div class="field"><label>Téléphone</label><input name="Téléphone" type="tel" required></div>
+      <div class="field"><label>E-mail</label><input name="E-mail" type="email"></div>
+      <div class="field"><label>Immatriculation</label><input name="Immatriculation" placeholder="Ex. VD 123456"></div>
+      <div class="field"><label>Marque</label><input name="Marque" placeholder="Ex. Volkswagen"></div>
+      <div class="field"><label>Modèle</label><input name="Modèle" placeholder="Ex. Golf"></div>
+      <div class="field"><label>Année</label><input name="Année" placeholder="Ex. 2019"></div>
+      <div class="field"><label>Kilométrage</label><input name="Kilométrage" placeholder="Ex. 120000 km"></div>
+      <div class="field full"><label>Travaux souhaités / problème</label><textarea name="Travaux / problème" required placeholder="Expliquez-nous ce qu'il faut contrôler ou réparer..."></textarea></div>
       <div class="field full"><button class="big red submit" type="submit">Envoyer ma demande de devis</button></div>
     </div>
   </form>
@@ -58,7 +62,7 @@
 <aside class="info-card">
   <h2>Garage Concorde Sàrl</h2>
   <div class="info-line"><small>Téléphone</small><b><a href="tel:+41216247335">021 624 73 35</a></b></div>
-  <div class="info-line"><small>E-mail</small><b><a href="mailto:info@garage-concorde.ch">info@garage-concorde.ch</a></b></div>
+  <div class="info-line"><small>E-mail</small><b><a href="mailto:info@garage-concorde.ch">Garageconcorde@gmail.com</a></b></div>
   <div class="info-line"><small>Adresse</small><b>Av. d’Échallens 4<br>1004 Lausanne</b></div>
   <div class="info-line"><small>Devis</small><b>Gratuit et sans engagement</b></div>
 </aside>
@@ -67,25 +71,6 @@
 
 <footer><b>Garage Concorde Sàrl</b><span>Av. d’Échallens 4, 1004 Lausanne</span><span>021 624 73 35 · info@garage-concorde.ch</span></footer>
 
-<script>
-document.getElementById('devisForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  const get = id => document.getElementById(id).value.trim() || '-';
-  const subject = 'Demande de devis - Garage Concorde';
-  const body =
-`Nom: ${get('nom')}
-Téléphone: ${get('tel')}
-E-mail: ${get('email')}
-Immatriculation: ${get('plaque')}
-Marque: ${get('marque')}
-Modèle: ${get('modele')}
-Année: ${get('annee')}
-Kilométrage: ${get('km')}
 
-Travaux / problème:
-${get('message')}`;
-  window.location.href = 'mailto:info@garage-concorde.ch?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-});
-</script>
 </body>
 </html>
