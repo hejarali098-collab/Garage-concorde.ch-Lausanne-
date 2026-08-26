@@ -297,3 +297,53 @@ animation:rotorSpin 28s linear infinite}
 @media(prefers-reduced-motion:reduce){
   .light-line{animation:none}
 }
+
+/* V9 - accueil centré professionnel */
+.home-v9{background:#fff;min-height:calc(100vh - 142px);overflow:hidden}
+.service-ticker{height:42px;background:#f4f4f5;border-bottom:1px solid #dedee2;overflow:hidden;display:flex;align-items:center;white-space:nowrap}
+.ticker-track{display:inline-flex;align-items:center;gap:24px;min-width:max-content;padding-left:20px;animation:tickerMove 28s linear infinite;font-size:13px;font-weight:900;color:#202124;text-transform:uppercase;letter-spacing:.4px}
+.ticker-track i{font-style:normal;color:#d71936;font-size:17px}
+@keyframes tickerMove{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.hero-v9{position:relative;min-height:calc(100vh - 184px);display:flex;align-items:center;justify-content:center;padding:45px 25px 110px;background:radial-gradient(circle at center,#fff 0%,#fafafa 66%,#f3f3f4 100%);overflow:hidden}
+.hero-center{position:relative;z-index:3;text-align:center;width:min(850px,100%)}
+.experience{color:#a36c00;font-size:13px;font-weight:900;letter-spacing:2px;margin-bottom:14px}
+.hero-center h1{font-size:clamp(58px,8vw,105px);line-height:.86;margin:0;letter-spacing:-4px;font-weight:950}
+.hero-center h1 span{display:block;color:#d71936}
+.hero-center p{font-size:18px;color:#555;margin:22px 0 28px}
+.main-actions{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.main-btn{display:grid;place-items:center;min-height:62px;border-radius:11px;padding:12px 14px;font-size:15px;font-weight:900;text-decoration:none;box-shadow:0 8px 25px rgba(0,0,0,.11);transition:.2s}
+.main-btn:hover{transform:translateY(-3px)}
+.main-btn.red{background:#d71936;color:#fff}.main-btn.black{background:#151515;color:#fff}.main-btn.gold{background:#f5c400;color:#161616}.main-btn.blue{background:#175da8;color:#fff}
+
+.pro-bg{position:absolute;inset:0;pointer-events:none;opacity:.18}
+.arc{position:absolute;border:1px solid #aeb1b6;border-radius:50%}
+.arc1{width:680px;height:680px;left:-370px;top:-250px}
+.arc2{width:580px;height:580px;right:-330px;bottom:-300px;border-color:#d71936}
+.grid-glow{position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.025) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(circle at center,#000,transparent 75%)}
+
+.promo-v9{position:absolute;right:28px;bottom:22px;z-index:4;width:155px;background:#fff;border:1px solid #e2e2e5;border-radius:13px;padding:7px;box-shadow:0 8px 25px rgba(0,0,0,.09)}
+.promo-v9 span{display:block;font-size:9px;font-weight:900;color:#777;text-align:center;padding:3px}
+.promo-v9 img{width:100%;max-height:125px;object-fit:contain;border-radius:8px}
+
+.light-lines,.services-pro,.circuit-motion{display:none!important}
+
+@media(max-width:850px){
+ .service-ticker{height:38px}.ticker-track{font-size:11px;gap:18px;animation-duration:24s}
+ .hero-v9{min-height:calc(100vh - 150px);padding:34px 16px 150px}
+ .experience{font-size:10px;letter-spacing:1.2px}
+ .hero-center h1{font-size:58px;letter-spacing:-2.5px}
+ .hero-center p{font-size:15px;margin:16px 0 22px}
+ .main-actions{grid-template-columns:1fr 1fr;gap:9px}
+ .main-btn{min-height:56px;font-size:13px;padding:10px}
+ .promo-v9{right:50%;transform:translateX(50%);bottom:14px;width:125px}
+ .promo-v9 img{max-height:90px}
+ .pro-bg{opacity:.11}
+}
+@media(max-width:430px){
+ .hero-center h1{font-size:49px}
+ .main-actions{grid-template-columns:1fr}
+ .main-btn{min-height:50px}
+ .hero-v9{padding-bottom:145px}
+}
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none}}
