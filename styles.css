@@ -758,3 +758,40 @@ animation:rotorSpin 28s linear infinite}
 @media(prefers-reduced-motion:reduce){
   .ticker-track-v16{animation:none}
 }
+
+
+/* V17 - correction précise du profil Lausanne sur téléphone */
+@media(max-width:800px){
+  .hero-v15{
+    min-height:760px;
+    padding:18px 14px 40px;
+    align-items:flex-end;
+    background:#efe8df;
+  }
+  .hero-photo-v15{
+    background-image:url("hero-lausanne.jpeg");
+    background-size:100% auto;
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-color:#efe8df;
+  }
+  .hero-content-v15{
+    margin-top:0;
+    margin-bottom:18px;
+    width:100%;
+  }
+  .experience-badge-v15{
+    right:14px;
+    top:14px;
+  }
+}
+@media(max-width:430px){
+  .hero-v15{
+    min-height:735px;
+    padding-bottom:34px;
+  }
+  .hero-photo-v15{
+    background-size:100% auto;
+    background-position:top center;
+  }
+}
