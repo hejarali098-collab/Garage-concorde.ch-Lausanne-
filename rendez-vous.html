@@ -1,23 +1,51 @@
-<!doctype html><html lang="fr"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Garage Concorde Sàrl à Lausanne, garage toutes marques depuis plus de 20 ans. Entretien, réparation, carrosserie, préparation expertise et devis gratuit.">
-<title>Rendez-vous | Garage Concorde Sàrl</title><link rel="stylesheet" href="styles.css"></head><body>
-<div class="topbar"><div class="container"><div>📍 Av. d'Échallens 4, 1004 Lausanne</div><div><a href="tel:+41216247335">021 624 73 35</a> · <a href="mailto:info@garage-concorde.ch">info@garage-concorde.ch</a></div></div></div>
-<header><div class="container nav">
-<a class="brand" href="index.html"><img src="logo.jpeg" alt="Logo Garage Concorde"><div><strong>Garage Concorde Sàrl</strong><span>Lausanne</span></div></a>
-<nav class="navlinks"><a href="index.html">Accueil</a><a href="devis.html">Devis</a><a href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a></nav>
-</div></header>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rendez-vous | Garage Concorde Sàrl</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.booking-wrap{min-height:calc(100vh - 142px);padding:48px max(6vw,25px);background:linear-gradient(135deg,#fff,#fff9df)}
+.booking-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.55fr);gap:26px;align-items:center}
+.booking-card,.contact-card{background:#fff;border:1px solid #e6e6e6;border-radius:20px;box-shadow:0 12px 34px #00000012;padding:32px}
+.booking-card h1{font-size:clamp(42px,5.5vw,68px);line-height:.96;margin:8px 0 18px}
+.booking-card h1 span{color:#d71936}
+.booking-card p{font-size:18px;color:#555;max-width:700px}
+.reserve-btn{display:block;width:100%;text-align:center;margin-top:25px;font-size:20px}
+.contact-card h2{margin-top:0}
+.contact-row{padding:12px 0;border-bottom:1px solid #eee}
+.contact-row:last-child{border-bottom:0}
+.contact-row small{display:block;color:#777;margin-bottom:4px}
+.wa-small{display:inline-block;margin-top:18px;padding:9px 12px;border:1px solid #8bc79c;border-radius:8px;color:#1f7435;background:#f3fff6;font-size:13px;font-weight:800}
+@media(max-width:820px){.booking-grid{grid-template-columns:1fr}.booking-card,.contact-card{padding:24px}.reserve-btn{font-size:17px}}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="logo.jpeg" alt="Garage Concorde"><span>Garage Concorde Sàrl</span></a>
+  <nav><a href="index.html">Accueil</a><a href="devis.html">Devis</a><a class="active" href="rendez-vous.html">Rendez-vous</a><a href="atelier.html">Atelier</a></nav>
+</header>
 
-<main><section class="section soft"><div class="container">
-<div class="eyebrow">Rendez-vous</div><h1 style="font-size:56px">Réserver <span>en ligne</span></h1>
-<div class="rdv">
-<div class="box"><h2>Prendre rendez-vous</h2><p class="lead">Choisissez la prestation, la date et l'heure directement via Reservio.</p><div class="actions"><a class="btn btn-yellow" target="_blank" href="https://garage-concorde-sarl.reservio.com/booking">Ouvrir Reservio</a></div></div>
-<div class="box"><h3>Contact</h3><p>021 624 73 35<br>info@garage-concorde.ch<br>Av. d'Échallens 4, 1004 Lausanne</p><a class="small-wa" target="_blank" href="https://wa.me/41766165299">WhatsApp</a></div>
+<main class="booking-wrap">
+<div class="booking-grid">
+<section class="booking-card">
+  <div class="kicker">RENDEZ-VOUS EN LIGNE</div>
+  <h1>Réserver votre <span>rendez-vous</span></h1>
+  <p>Choisissez directement votre prestation, la date et l'heure qui vous conviennent sur notre système de réservation Reservio.</p>
+  <a class="big gold reserve-btn" target="_blank" rel="noopener" href="https://garage-concorde-sarl.reservio.com/booking">Prendre rendez-vous en ligne</a>
+</section>
+
+<aside class="contact-card">
+  <h2>Besoin d'aide ?</h2>
+  <div class="contact-row"><small>Téléphone</small><b><a href="tel:+41216247335">021 624 73 35</a></b></div>
+  <div class="contact-row"><small>E-mail</small><b><a href="mailto:info@garage-concorde.ch">info@garage-concorde.ch</a></b></div>
+  <div class="contact-row"><small>Adresse</small><b>Av. d’Échallens 4<br>1004 Lausanne</b></div>
+  <a class="wa-small" target="_blank" rel="noopener" href="https://wa.me/41766165299">WhatsApp</a>
+</aside>
 </div>
-</div></section></main>
+</main>
 
-<footer class="footer"><div class="container"><div class="footer-grid">
-<div><h3>Garage Concorde Sàrl</h3><p>Garage toutes marques à Lausanne depuis plus de 20 ans.</p></div>
-<div><h3>Contact</h3><p>021 624 73 35</p><p>info@garage-concorde.ch</p></div>
-<div><h3>Adresse</h3><p>Av. d'Échallens 4</p><p>1004 Lausanne</p></div>
-</div></div></footer></body></html>
+<footer><b>Garage Concorde Sàrl</b><span>Av. d’Échallens 4, 1004 Lausanne</span><span>021 624 73 35 · info@garage-concorde.ch</span></footer>
+</body>
+</html>

@@ -1,19 +1,20 @@
-GARAGE CONCORDE SÀRL — VERSION BLANC / JAUNE / ROUGE AVEC VOITURES ANIMÉES
+GARAGE CONCORDE SÀRL — SITE V4
 
-Contenu :
-- index.html : accueil sur une seule page, sans défilement important
-- devis.html : formulaire de devis
-- rendez-vous.html : lien Reservio + WhatsApp discret
-- atelier.html : photos atelier séparées des photos équipe
-- styles.css : design et animation des petites voitures
+Modifications :
+- Pages Devis et Rendez-vous conservées corrigées.
+- Suppression de l'animation de clé.
+- Nouvelle animation plus professionnelle : disques de frein/rotors + ligne diagnostic + pulsations discrètes.
+- Animation allégée sur téléphone.
+- Page Atelier : photos atelier séparées des photos équipe.
+- Section Vidéos prête pour TikTok / Instagram.
 
-Installation GitHub :
+Pour intégrer les vraies vidéos :
+envoyez les liens PUBLICS TikTok ou Instagram. Ils seront ajoutés à la section Vidéos.
+
+Installation :
 1. Décompressez le ZIP.
-2. Dans votre dépôt GitHub, cliquez Add file > Upload files.
-3. Envoyez TOUS les fichiers de ce dossier ensemble.
-4. Cliquez Commit changes.
-5. Attendez 1 à 2 minutes puis actualisez votre site.
+2. Remplacez les fichiers du dépôt GitHub par tous les fichiers du ZIP.
+3. Commit changes.
+4. Attendez 1 à 2 minutes et actualisez.
 
-Important :
-- Aucun dossier assets.
-- Ne renommez aucun fichier.
+V5 : 4 liens vidéo ajoutés à la page Atelier (2 TikTok + 2 Instagram).
