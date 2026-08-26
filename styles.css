@@ -795,3 +795,68 @@ animation:rotorSpin 28s linear infinite}
     background-position:top center;
   }
 }
+
+
+/* V18 - téléphone : une seule image continue, plus de coupure beige */
+@media(max-width:800px){
+  .hero-v15{
+    min-height:735px;
+    padding:18px 14px 34px;
+    align-items:flex-end;
+    background:#111;
+  }
+
+  .hero-photo-v15{
+    background-image:url("hero-lausanne.jpeg");
+    background-size:auto 100%;
+    background-position:left center;
+    background-repeat:no-repeat;
+    background-color:#111;
+  }
+
+  .hero-v15:after{
+    background:linear-gradient(
+      180deg,
+      rgba(0,0,0,.02) 0%,
+      rgba(0,0,0,.04) 48%,
+      rgba(0,0,0,.22) 100%
+    );
+  }
+
+  .hero-content-v15{
+    width:100%;
+    margin:0 0 14px;
+  }
+
+  .small-title-v15{
+    background:rgba(15,15,15,.72);
+    backdrop-filter:blur(4px);
+  }
+
+  .main-actions-v15{
+    grid-template-columns:1fr 1fr;
+    gap:9px;
+  }
+
+  .main-btn-v15{
+    min-height:54px;
+    font-size:12px;
+  }
+
+  .experience-badge-v15{
+    right:12px;
+    top:16px;
+  }
+}
+
+@media(max-width:430px){
+  .hero-v15{
+    min-height:710px;
+    padding-bottom:30px;
+  }
+
+  .hero-photo-v15{
+    background-size:auto 100%;
+    background-position:left center;
+  }
+}

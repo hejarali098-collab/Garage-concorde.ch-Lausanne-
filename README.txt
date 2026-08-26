@@ -20,3 +20,5 @@ V15 : photo Lausanne visible, 'TOUTES MARQUES' écrit petit au centre, badge +20
 V16 : correction affichage mobile de la photo Lausanne, retour de la barre animée des prestations, retour de la section partenaires avec logos.
 
 V17 : correction mobile du cadrage de la photo principale. Sur téléphone, la photo est affichée à 100% de la largeur pour que le logo Garage Concorde soit visible en entier.
+
+V18 : correction téléphone. La photo Lausanne couvre maintenant toute la hauteur de l'accueil, sans zone beige séparée.
