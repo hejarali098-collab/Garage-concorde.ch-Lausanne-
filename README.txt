@@ -1,20 +1,15 @@
-GARAGE CONCORDE SÀRL — SITE FINAL
+GARAGE CONCORDE SÀRL — VERSION PLUS CLAIRE
 
+Modifications :
+- Plus de blanc et de gris clair pour alléger le site.
+- Accueil = une seule page sans sections en dessous.
+- Texte accueil : plus de 20 ans, toutes marques, entretien, réparation, carrosserie, préparation expertise, devis gratuit.
+- Publicité conservée à droite.
+- Atelier : photos du garage séparées des photos de l'équipe.
+- Devis, rendez-vous et atelier accessibles depuis le menu.
+
+Pour GitHub :
 1. Décompressez le ZIP.
-2. Sur GitHub, ouvrez votre dépôt Garage-concorde.ch.
-3. Supprimez les anciens fichiers du site si nécessaire.
-4. Cliquez Add file > Upload files.
-5. Envoyez TOUS les fichiers de ce dossier ensemble.
-6. Cliquez Commit changes.
-7. Attendez 1 à 2 minutes puis actualisez votre site.
-
-IMPORTANT :
-- Tous les fichiers et toutes les images sont au même niveau.
-- Il n'y a PAS de dossier assets.
-- Ne renommez pas les fichiers.
-
-Pages :
-index.html = Accueil
-devis.html = Devis
-rendez-vous.html = Rendez-vous
-atelier.html = Atelier & équipe
+2. Envoyez tous les fichiers ensemble à la racine du dépôt.
+3. Ne créez pas de dossier assets.
+4. Ne renommez aucun fichier.
